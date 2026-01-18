@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "TT Lakes";
+    src: url("fontface/TTLakes-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TT Lakes";
+    src: url("fontface/TTLakes-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    font-family: "TT Lakes", sans-serif;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #1b1c21;
+}
+
+.header {
+    display: flex;
+    max-width: 320px;
+    height: 100dvh;
+    background: #fff;
+    flex-direction: column;
+    box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2), -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+}
+
+.header__btn {
+    display: flex;
+    gap: 18px;
+    margin: 24px;
+}
+
+.btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ff3e79;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-self: center;
+    background-size: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    background-color: #c02856;
+}
+
+.menu {
+    flex-grow: 1;
+}
+
+.menu__list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu__link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #1b1c21;
+    transition: color 0.3s linear;
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    gap: 20px;
+    height: 24px;
+}
+
+.menu__link::before {
+    content: "";
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    width: 4px;
+    height: 32px;
+    background-color: #41f6d7;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+
+}
+
+.menu__link:hover.menu__link::before,
+.active.menu__link::before {
+    opacity: 1;
+}
+
+.menu__link:hover,
+.menu__link.active {
+    color: #7e7e82;
+}
+
+.header-logo {
+    flex-grow: 1;
+}
+
+.menu__buttons {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.menu__footer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 24px;
+}
+
+.menu__mail {
+    margin-bottom: 12px;
+}
+.menu__tel {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: -0.03em;
+    margin-bottom: 40px;
+}
+
+.menu__lang {
+    margin-bottom: 32px;
+}
+
+.menu__lang-link:hover,
+.menu__lang-link.active {
+    color: #7e7e82;
+}
